@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 
 public class BeforeAfterForTest {
 
+    protected static final String URL = "https://qa-scooter.praktikum-services.ru/";
+
     WebDriver webDriver;
     @Before
     public void init() {

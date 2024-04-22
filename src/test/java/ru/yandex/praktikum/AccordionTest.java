@@ -34,7 +34,7 @@ public class AccordionTest extends BeforeAfterForTest {
 
     @Test
     public void accordionTest() {
-        webDriver.get("https://qa-scooter.praktikum-services.ru/");
+        webDriver.get(URL);
         MainPage mainPage = new MainPage(webDriver);
         mainPage.closeCookiesWindow();
         mainPage.expandQuestion(index);

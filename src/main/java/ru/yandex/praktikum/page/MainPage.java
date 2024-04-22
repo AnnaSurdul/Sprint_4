@@ -12,11 +12,11 @@ import java.time.Duration;
 public class MainPage {
     private final WebDriver webDriver;
 
-    By headerOrderButton = By.xpath("//div[contains(@class,'Header')]/button[text()='Заказать']");
-    By centerOrderButton = By.xpath("//div[contains(@class,'Button')]/button[text()='Заказать']");
-    By cookiesButton = By.id("rcc-confirm-button");
+    private final By headerOrderButton = By.xpath("//div[contains(@class,'Header')]/button[text()='Заказать']");
+    private final By centerOrderButton = By.xpath("//div[contains(@class,'Button')]/button[text()='Заказать']");
+    private final By cookiesButton = By.id("rcc-confirm-button");
 
-    By accordionExpandText;
+    private By accordionExpandText;
 
     private final String questionAccordion = "accordion__heading-%s";
     private final String answerAccordion = "//div[contains(@id, 'accordion__panel')][.='%s']";

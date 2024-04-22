@@ -40,7 +40,7 @@ public class OrderTest extends BeforeAfterForTest{
 
     @Test
     public void headerOrderTest() {
-        webDriver.get("https://qa-scooter.praktikum-services.ru/");
+        webDriver.get(URL);
         MainPage mainPage = new MainPage(webDriver);
         OrderPage orderPage = new OrderPage(webDriver);
         mainPage.closeCookiesWindow();
@@ -61,7 +61,7 @@ public class OrderTest extends BeforeAfterForTest{
 
     @Test
     public void centerOrderTest() {
-        webDriver.get("https://qa-scooter.praktikum-services.ru/");
+        webDriver.get(URL);
         MainPage mainPage = new MainPage(webDriver);
         OrderPage orderPage = new OrderPage(webDriver);
         mainPage.closeCookiesWindow();
